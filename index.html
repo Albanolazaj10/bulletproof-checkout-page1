@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&display=swap"
+      rel="stylesheet"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Bulletproof checkout page1</title>
+  </head>
+  <body>
+    <div class="nav-header-new">
+      <div class="top-dark text-center">
+        <p>FREE SHIPPING ON ALL ORDERS | SUBSCRIBE & SAVE $10!</p>
+      </div>
+      <nav class="main-nav navbar navbar-expand-md">
+        <div class="container">
+          <a
+            class="navbar-brand order-2 order-sm-2 order-md-1"
+            href="https://www.bulletproofnaturals.com/"
+          >
+            <img
+              src="https://bulletproofnaturals.com/images/bulletproofhead.png"
+              title="Bulletproof Naturals"
+            />
+          </a>
+          <button
+            class="navbar-toggler order-sm-1 collapsed"
+            type="button"
+            area-expanded="false"
+          >
+            <button
+              class="navbar-toggler order-sm-1 open"
+              type="button"
+              area-expanded="true"
+            >
+              <span class="navbar-toggler-icon">
+                <div class="icon-three">
+                  <div class="hamburger hamburger-three"></div>
+                </div>
+              </span>
+            </button>
+          </button>
+          <div
+            class="navbar-collapse order-sm-2 collapse"
+            id="collapsibleNavbar"
+          >
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="https://bulletproofnaturals.com/#ingredients-wrap"
+                  >about</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="https://bulletproofnaturals.com/#faq-section"
+                  >FAQ</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="https://bulletproofnaturals.com/#customers-wrap"
+                  >TESTIMONIALS</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="https://bulletproofnaturals.com/product/horny-goat-max/1-bottle"
+                  >PRODUCTS</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://bulletproofnaturals.com/blog/"
+                  >Blog</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="cart order-3">
+            <a
+              class="cart-link"
+              href="https://www.bulletproofnaturals.com/checkout"
+            >
+              <img src="https://www.bulletproofnaturals.com/images/cart.png" />
+              <span>0</span>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <main class="page-body">
+      <section id="order_form">
+        <div class="container" id="payment-form">
+          <div class="row">
+            <div
+              class="user_info mx-auto"
+              style="width: 100%; text-align: center"
+            >
+              <div class="permanent_address">
+                <div class="uppercase px-3 bold">cart total: $239.95</div>
+                <p>free shipping</p>
+                <div class="payment-btn">
+                  <div class="input_radio cards-acceptance">
+                    <label for="strips">
+                      <input id="strips" type="radio" value="2" />
+                      check out
+                    </label>
+                  </div>
+                  <span>or</span>
+                  <div class="input_radio cards-acceptance">
+                    <label for="paypal">
+                      <a
+                        href="https://www.bulletproofnaturals.com/paypal-payment"
+                        class="btn-paypal"
+                      >
+                        <img
+                          src="https://www.bulletproofnaturals.com/images/paypl.png"
+                        />
+                      </a>
+                    </label>
+                  </div>
+                  <div class="input_radio cards-acceptance">
+                    <label for="amazon">
+                      <div id="AmazonPayButton">
+                        <img
+                          class="amazonpay-button-inner-image"
+                          style="cursor: pointer; max-height: 90px"
+                          id="OffAmazonPaymentsWidgets0"
+                          src="https://d2ldlvi1yef00y.cloudfront.net/default/us/live/lwa/darkgray/x-large/PwA.png"
+                        />
+                      </div>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- PRODUCT CART -->
+      <section id="product_cart">
+        <div class="container">
+          <div class="woocommerce-cart-form">
+            <table
+              class="shop_table shop_table_responsive cart woocommerce-cart-form__contents"
+              cellspacing="0"
+            >
+              <!-- THEAD -->
+              <thead>
+                <tr>
+                  <th class="product-remove">&nbsp;</th>
+                  <th class="product-thumbnail">&nbsp;</th>
+                  <th class="product-name">Product</th>
+                  <th class="product-price">Price</th>
+                  <th class="product-quantity text-center">Quantity</th>
+                  <th class="product-subtotal">Total</th>
+                </tr>
+              </thead>
+              <!-- TBODY -->
+              <tbody>
+                <tr class="woocommerce-cart-form__cart-item cart_item">
+                  <td class="product-remove">
+                    <button type="submit">x</button>
+                  </td>
+                  <td class="product-thumbnail">
+                    <a>
+                      <img
+                        src="https://www.bulletproofnaturals.com/images/hgmlatest.png"
+                        class="attachment-thumbnail size-thumbnail"
+                      />
+                    </a>
+                  </td>
+                  <td class="product-name" data-title="Product">
+                    <p class="black">
+                      6 Bottles Pack - 540 Tablets
+                      <br />
+                      Only $39,99 per Bottle(save 20%)
+                    </p>
+                  </td>
+                  <td class="product-price" data-title="Price">
+                    <span class="woocommerce-Price-amount amount"
+                      >$ 239.95</span
+                    >
+                  </td>
+                  <td class="product-quantity" data-title="Quantity">
+                    <div class="input-group">
+                      <a
+                        type="button"
+                        class="minusBtn quantity-left-minus btn btn-light btn-number"
+                        href="#"
+                        >-</a
+                      >
+                      <input
+                        type="text"
+                        class="form-control input-number"
+                        value="1"
+                      />
+                      <a
+                        type="button"
+                        class="plusBtn quantity-right-plus btn btn-light btn-number"
+                        href="#"
+                        >+</a
+                      >
+                    </div>
+                  </td>
+                  <td class="product-subtotal" data-title="Total">
+                    <span class="woocommerce-Price-amount amount">$239.95</span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+      <script src="app.js"></script>
+    </main>
+    <!-- PRE-FOOTER -->
+    <section id="order-wrap-custom" style="background-color: #a77b00">
+      <div class="container">
+        <div class="row col-md-10">
+          <div class="col-md-12 col-lg-6">
+            <p class="h3 black">LIVE LIFE TO THE MAX! SUBSCRIBE & SAVE $10!</p>
+          </div>
+          <div class="col-md-12 col-lg-6">
+            <form action="https://www.getdrip.com/forms/106907508/submissions">
+              <div>
+                <input
+                  type="email"
+                  name="fields[email]"
+                  id="drip-email"
+                  value
+                  placeholder="Enter Your Email"
+                />
+                <input type="submit" value="Sing Up" id="subscribe" />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- FOOTER -->
+    <footer>
+      <div class="container">
+        <div class="row links">
+          <div class="col-sm-12 col-md-12 col-lg-3 menu-footer-1">
+            <div class="menu-shop-container">
+              <a class="footer-logo" href="https://www.bulletproofnaturals.com">
+              <img alt="Bulletproof Naturals" src="https://bulletproofnaturals.com/images/bulletprooffooter.png" alt="Bulletproof Naturals">
+              </a>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-2 menu-footer-2">
+            <h2 class="goth">SHOP</h2>
+            <div class="menu-learn-container">
+              <ul>
+                <li>
+                  <a href="https://bulletproofnaturals.com/product/horny-goat-max/1-bottle">
+                  <span>Products</span>
+                </a>
+                </li>
+                <li>
+                  <a href="https://bulletproofnaturals.com/#ingredients-wrap">
+                  <span>About</span>
+                </a>
+                </li>
+                <li>
+                  <a href="https://bulletproofnaturals.com/#faq-section">
+                  <span>FAQ</span>
+                </a>
+                </li>
+                <li>
+                  <a href="https://bulletproofnaturals.com/#customers-wrap">
+                  <span>Testimonials</span>
+                </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3 menu-footer-3">
+            <h2 class="goth">SUPPORT</h2>
+            <div class="menu-customer-care-container">
+              <ul>
+                <li>
+                  <a href="https://www.bulletproofnaturals.com/contact-us">
+                  <span>Contact Us</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://bulletproofnaturals.com/#guarantee-wrap">
+                  <span>Money Back Guarantee</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.bulletproofnaturals.com/shipping-policy">
+                  <span>Shipping Policy</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.bulletproofnaturals.com/return-policy">
+                  <span>Return Policy</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- ICONS -->
+          <div class="col-sm-12 col-md-4 col-lg-3 menu-footer-4">
+            <div class="menu-company-container">
+              <ul class="social-icons">
+                <li>
+                  <a target="_blank" href="https://www.facebook.com/BulletproofNaturals/">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="25" height="27">
+                  <path d="M25 24.877c0 .792-.618 1.436-1.38 1.436h-6.37v-10.07h3.25l.486-3.923H17.25V9.815c0-1.136.303-1.91 1.87-1.91l1.998-.001v-3.51c-.346-.048-1.532-.154-2.912-.154-2.88 0-4.852 1.828-4.852 5.187v2.893h-3.258v3.924h3.258v10.069H1.38c-.762 0-1.38-.644-1.38-1.436V1.748C0 .955.618.313 1.38.313h22.24c.762 0 1.38.642 1.38 1.435v23.129"></path>
+                  </svg>
+                  </a>
+                </li>
+                <li>
+                  <a target="_blank" href="https://twitter.com/bulletproofnats">
+                  <svg aria-hidden="true" class="icon icon-twitter" viewBox="0 0 20 20">
+                  <path d="M19.551 4.208q-.815 1.202-1.956 2.038 0 .082.02.255t.02.255q0 1.589-.469 3.179t-1.426 3.036-2.272 2.567-3.158 1.793-3.963.672q-3.301 0-6.031-1.773.571.041.937.041 2.751 0 4.911-1.671-1.284-.02-2.292-.784T2.456 11.85q.346.082.754.082.55 0 1.039-.163-1.365-.285-2.262-1.365T1.09 7.918v-.041q.774.408 1.773.448-.795-.53-1.263-1.396t-.469-1.864q0-1.019.509-1.997 1.487 1.854 3.596 2.924T9.81 7.184q-.143-.509-.143-.897 0-1.63 1.161-2.781t2.832-1.151q.815 0 1.569.326t1.284.917q1.345-.265 2.506-.958-.428 1.386-1.732 2.18 1.243-.163 2.262-.611z"></path>
+                  </svg>
+                  </a>
+                </li>
+                <li>
+                  <a target="_blank" href="https://www.instagram.com/bulletproofnaturals/"></a>
+                <svg aria-hidden="true" class="icon icon-instagram" viewBox="0 0 512 512">
+                  <path d="M256 49.5c67.3 0 75.2.3 101.8 1.5 24.6 1.1 37.9 5.2 46.8 8.7 11.8 4.6 20.2 10 29 18.8s14.3 17.2 18.8 29c3.4 8.9 7.6 22.2 8.7 46.8 1.2 26.6 1.5 34.5 1.5 101.8s-.3 75.2-1.5 101.8c-1.1 24.6-5.2 37.9-8.7 46.8-4.6 11.8-10 20.2-18.8 29s-17.2 14.3-29 18.8c-8.9 3.4-22.2 7.6-46.8 8.7-26.6 1.2-34.5 1.5-101.8 1.5s-75.2-.3-101.8-1.5c-24.6-1.1-37.9-5.2-46.8-8.7-11.8-4.6-20.2-10-29-18.8s-14.3-17.2-18.8-29c-3.4-8.9-7.6-22.2-8.7-46.8-1.2-26.6-1.5-34.5-1.5-101.8s.3-75.2 1.5-101.8c1.1-24.6 5.2-37.9 8.7-46.8 4.6-11.8 10-20.2 18.8-29s17.2-14.3 29-18.8c8.9-3.4 22.2-7.6 46.8-8.7 26.6-1.3 34.5-1.5 101.8-1.5m0-45.4c-68.4 0-77 .3-103.9 1.5C125.3 6.8 107 11.1 91 17.3c-16.6 6.4-30.6 15.1-44.6 29.1-14 14-22.6 28.1-29.1 44.6-6.2 16-10.5 34.3-11.7 61.2C4.4 179 4.1 187.6 4.1 256s.3 77 1.5 103.9c1.2 26.8 5.5 45.1 11.7 61.2 6.4 16.6 15.1 30.6 29.1 44.6 14 14 28.1 22.6 44.6 29.1 16 6.2 34.3 10.5 61.2 11.7 26.9 1.2 35.4 1.5 103.9 1.5s77-.3 103.9-1.5c26.8-1.2 45.1-5.5 61.2-11.7 16.6-6.4 30.6-15.1 44.6-29.1 14-14 22.6-28.1 29.1-44.6 6.2-16 10.5-34.3 11.7-61.2 1.2-26.9 1.5-35.4 1.5-103.9s-.3-77-1.5-103.9c-1.2-26.8-5.5-45.1-11.7-61.2-6.4-16.6-15.1-30.6-29.1-44.6-14-14-28.1-22.6-44.6-29.1-16-6.2-34.3-10.5-61.2-11.7-27-1.1-35.6-1.4-104-1.4z"></path>
+                  <path d="M256 126.6c-71.4 0-129.4 57.9-129.4 129.4s58 129.4 129.4 129.4 129.4-58 129.4-129.4-58-129.4-129.4-129.4zm0 213.4c-46.4 0-84-37.6-84-84s37.6-84 84-84 84 37.6 84 84-37.6 84-84 84z"></path>
+                  <circle cx="390.5" cy="121.5" r="30.2"></circle>
+                </svg>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- COPYRIGHT FOOTER -->
+      <div class="copyright-footer">
+        <div class="container">
+          <div class="site-footer__copyright--bottom" aria-label="Footer Disclaimer">
+            <p class="site-footer__copyright-content text-center">
+              <span class="w_msg">†</span>
+              Statements made on this website have not been evaluated by the U.S. Food and Drug Administration. These products are not intended to diagnose, treat, cure, or prevent any disease. Information provided by this website or this company is not a substitute for individual medical advice.  
+              <span class="copyright">©Bulletproof Naturals, LLC 2019-2020</span>
+            </p>
+          </div>
+          <ul class="site-footer__linklist">
+            <li class="site-footer__linklist-item">
+              <a href="https://www.bulletproofnaturals.com/privacy-policy">Privacy Policy</a>
+              |
+            </li>
+            <li class="site-footer__linklist-item">
+              <a href="https://www.bulletproofnaturals.com/terms-and-conditions">Terms and Conditions</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
